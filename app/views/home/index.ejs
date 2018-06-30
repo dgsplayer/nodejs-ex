@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9" lang="pt-br" class="no-js"> <![endif]-->
+<!--[if !(IE)]><!-->
+<html lang="en" class="no-js">
+<!--<![endif]-->
+<head>
+    <title>SVX</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="pt-br"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="SVX">
+    <meta name="author" 	content="Douglas Melo">
+    <meta name="robots" 	content="noindex,nofollow">
+    <!-- CSS -->
+    <meta name="language" content="PT-br" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=all" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!--    <link href="./assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />-->
+    <!-- END GLOBAL MANDATORY STYLES -->
+    <!-- BEGIN PAGE LEVEL PLUGINS -->
+    <!--    <link href="./assets/global/plugins/bootstrap-daterangepicker/daterangepicker.min.css" rel="stylesheet" type="text/css" />-->
+    <link href="./assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
+    <!--    <link href="./assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />-->
+    <!--    <link href="./assets/global/plugins/jqvmap/jqvmap/jqvmap.css" rel="stylesheet" type="text/css" />-->
+    <!-- END PAGE LEVEL PLUGINS -->
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    <link href="./assets/global/css/components.min.css" rel="stylesheet" id="style_components" type="text/css" />
+    <link href="./assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <!-- END THEME GLOBAL STYLES -->
+    <!-- BEGIN THEME LAYOUT STYLES -->
+    <link href="./assets/layouts/layout/css/layout.min.css" rel="stylesheet" type="text/css" />
+    <link href="./assets/layouts/layout/css/themes/darkblue.min.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="./assets/layouts/layout/css/custom.min.css" rel="stylesheet" type="text/css" />
+
+    <link href="./assets/global/css/phone.css" rel="stylesheet" type="text/css">
+
+    <script src="./assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<style>
+    /* Paste this css to your style sheet file or under head tag */
+    /* This only works with JavaScript,
+    if it's not present, don't show loader */
+    .no-js #loader { display: none;  }
+    .js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: 9999;
+        background: url('./assets/img/loading.gif') center no-repeat #fff;
+    }
+</style>
+<div class="se-pre-con"></div>
+<body class="page-header-fixed page-sidebar-closed-hide-logo page-content-white page-sidebar-closed"   style="overflow-x: hidden !important">
+<div class="page-wrapper">
+<div class="page-header navbar navbar-fixed-top">
+<!-- BEGIN HEADER INNER -->
+<div class="page-header-inner ">
+<!-- BEGIN LOGO -->
+<div class="">
+    <a href="javascript:;">
+        <img src="./assets/img/logo_branco_svx.png" alt="logo" class="logo-default" style="width: 100px; margin-top: 5px; margin-left: 5px; float: left"> </a>
+
+</div>
+<!-- END LOGO -->
+<!-- BEGIN RESPONSIVE MENU TOGGLER -->
+<!--            <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">-->
+<!--                <span></span>-->
+<!--            </a>-->
+<!-- END RESPONSIVE MENU TOGGLER -->
+<!-- BEGIN TOP NAVIGATION MENU -->
+<div class="top-menu">
+<ul class="nav navbar-nav pull-right">
+    <!-- BEGIN NOTIFICATION DROPDOWN -->
+    <!-- DOC: Apply "dropdown-dark" class after "dropdown-extended" to change the dropdown styte -->
+    <!-- DOC: Apply "dropdown-hoverable" class after below "dropdown" and remove data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to enable hover dropdown mode -->
+    <!-- DOC: Remove "dropdown-hoverable" and add data-toggle="dropdown" data-hover="dropdown" data-close-others="true" attributes to the below A element with dropdown-toggle class -->
+    <li class="dropdown dropdown-extended dropdown-notification" id="header_notification_bar">
+        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+            <i class="icon-bell"></i>
+            <span class="badge badge-default"> 7 </span>
+        </a>
+        <ul class="dropdown-menu">
+            <li class="external">
+                <h3>
+                    <span class="bold">12 pending</span> notifications</h3>
+                <a href="page_user_profile_1.html">view all</a>
+            </li>
+            <li>
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 250px;"><ul class="dropdown-menu-list scroller" style="height: 250px; overflow: hidden; width: auto;" data-handle-color="#637283" data-initialized="1">
+                        <li>
+                            <a href="javascript:;">
+                                <span class="time">just now</span>
+                                                    <span class="details">
+                                                        <span class="label label-sm label-icon label-success">
+                                                            <i class="fa fa-plus"></i>
+                                                        </span> New user registered. </span>
+                            </a>
+                        </li>
+
+
+                    </ul><div class="slimScrollBar" style="background: rgb(99, 114, 131); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            </li>
+        </ul>
+    </li>
+    <!-- END NOTIFICATION DROPDOWN -->
+    <!-- BEGIN INBOX DROPDOWN -->
+    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+    <li class="dropdown dropdown-extended dropdown-inbox" id="header_inbox_bar">
+        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+            <i class="icon-envelope-open"></i>
+            <span class="badge badge-default"> 4 </span>
+        </a>
+        <ul class="dropdown-menu">
+            <li class="external">
+                <h3>You have
+                    <span class="bold">7 New</span> Messages</h3>
+                <a href="app_inbox.html">view all</a>
+            </li>
+            <li>
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 275px;"><ul class="dropdown-menu-list scroller" style="height: 275px; overflow: hidden; width: auto;" data-handle-color="#637283" data-initialized="1">
+
+
+                        <li>
+                            <a href="#">
+                                <!--                                                    <span class="photo">-->
+                                <!--                                                        <img src="./assets/layouts/layout3/img/avatar3.jpg" class="img-circle" alt=""> </span>-->
+                                                    <span class="subject">
+                                                        <span class="from"> Richard Doe </span>
+                                                        <span class="time">46 mins </span>
+                                                    </span>
+                                <span class="message"> Vivamus sed congue nibh auctor nibh congue nibh. auctor nibh auctor nibh... </span>
+                            </a>
+                        </li>
+                    </ul><div class="slimScrollBar" style="background: rgb(99, 114, 131); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            </li>
+        </ul>
+    </li>
+    <!-- END INBOX DROPDOWN -->
+    <!-- BEGIN TODO DROPDOWN -->
+    <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
+    <li class="dropdown dropdown-extended dropdown-tasks" id="header_task_bar">
+        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+            <i class="icon-calendar"></i>
+            <span class="badge badge-default"> 3 </span>
+        </a>
+        <ul class="dropdown-menu extended tasks">
+            <li class="external">
+                <h3>You have
+                    <span class="bold">12 pending</span> tasks</h3>
+                <a href="app_todo.html">view all</a>
+            </li>
+            <li>
+                <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 275px;"><ul class="dropdown-menu-list scroller" style="height: 275px; overflow: hidden; width: auto;" data-handle-color="#637283" data-initialized="1">
+                        <li>
+                            <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">New release v1.2 </span>
+                                                        <span class="percent">30%</span>
+                                                    </span>
+                                                    <span class="progress">
+                                                        <span style="width: 40%;" class="progress-bar progress-bar-success" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">40% Complete</span>
+                                                        </span>
+                                                    </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:;">
+                                                    <span class="task">
+                                                        <span class="desc">New UI release</span>
+                                                        <span class="percent">38%</span>
+                                                    </span>
+                                                    <span class="progress progress-striped">
+                                                        <span style="width: 38%;" class="progress-bar progress-bar-important" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100">
+                                                            <span class="sr-only">38% Complete</span>
+                                                        </span>
+                                                    </span>
+                            </a>
+                        </li>
+                    </ul><div class="slimScrollBar" style="background: rgb(99, 114, 131); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            </li>
+        </ul>
+    </li>
+    <li class="dropdown dropdown-user">
+        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+            <img alt="" class="img-circle" src="./assets/layouts/layout/img/avatar3_small.jpg">
+            <span class="username username-hide-on-mobile"> Nick </span>
+            <i class="fa fa-angle-down"></i>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-default">
+            <li>
+                <a href="page_user_profile_1.html">
+                    <i class="icon-user"></i> My Profile </a>
+            </li>
+            <li>
+                <a href="app_calendar.html">
+                    <i class="icon-calendar"></i> My Calendar </a>
+            </li>
+            <li>
+                <a href="app_inbox.html">
+                    <i class="icon-envelope-open"></i> My Inbox
+                    <span class="badge badge-danger"> 3 </span>
+                </a>
+            </li>
+            <li>
+                <a href="app_todo.html">
+                    <i class="icon-rocket"></i> My Tasks
+                    <span class="badge badge-success"> 7 </span>
+                </a>
+            </li>
+            <li class="divider"> </li>
+            <li>
+                <a href="page_user_lock_1.html">
+                    <i class="icon-lock"></i> Lock Screen </a>
+            </li>
+            <li>
+                <a href="page_user_login_1.html">
+                    <i class="icon-key"></i> Log Out </a>
+            </li>
+        </ul>
+    </li>
+		<li class="dropdown dropdown-quick-sidebar-toggler">
+        <a href="" class="dropdown-toggle">
+            <i class="icon-logout"></i>
+        </a>
+    </li>
+</ul>
+
+</div>
+
+</div>
+</div>
+
+<div class="page-container">
+<div class="page-sidebar-wrapper">
+    <div class="page-sidebar">
+        <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-closed" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+            <li class="sidebar-toggler-wrapper hide">
+                <div class="sidebar-toggler">
+                    <span></span>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="link_menu btn-phone"  href="javascript:;">
+                    <i class="fa fa-phone"></i><span class="title">Phone</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="javascript:;" data-toggle="modal" class="link_menu"  target="frame_container">
+                    <i class="fa fa-wechat"></i><span class="title">Chat</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" data-toggle="modal"  class="link_menu"  target="frame_container">
+                    <i class="fa fa-commenting-o"></i><span class="title">Sophie</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="javascript:;" data-toggle="modal"  class="link_menu"  target="frame_container">
+                    <i class="fa fa-envelope-o"></i><span class="title">E-mail</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="javascript:;" data-toggle="modal" class="link_menu"  target="frame_container">
+                    <i class="fa fa-video-camera"></i><span class="title">Videos</span>
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a href="javascript:;" data-toggle="modal"  class="link_menu"  target="frame_container">
+                    <i class="fa fa-facebook"></i><span class="title">Mídias Sociais</span>
+                </a>
+            </li>
+        </ul>
+        <BR>
+
+</div>
+    <!-- END SIDEBAR -->
+</div>
+
+<!-- END SIDEBAR -->
+<!-- BEGIN CONTENT -->
+<div class="page-content-wrapper">
+
+<div class="page-content" style="max-height: 768px; overflow-y: auto">
+<div class="row">
+    <div class="divPhone" style="background-color: #000000;height: 700px;display: none">
+        <div class="row">
+            <div class="col-md-12">
+                <input type="tel" name="name" id="telNumber" class="form-control tel" value="" />
+                <div class="num-pad">
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                2 <span class="small">
+                                        <p>
+                                            ABC</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                3 <span class="small">
+                                        <p>
+                                            DEF</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                4 <span class="small">
+                                        <p>
+                                            GHI</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                5 <span class="small">
+                                        <p>
+                                            JKL</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                6 <span class="small">
+                                        <p>
+                                            MNO</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                7 <span class="small">
+                                        <p>
+                                            PQRS</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                8 <span class="small">
+                                        <p>
+                                            TUV</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                9 <span class="small">
+                                        <p>
+                                            WXYZ</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                *
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                0 <span class="small">
+                                        <p>
+                                            +</p>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span4">
+                        <div class="num">
+                            <div class="txt">
+                                #
+                            </div>
+                        </div>
+                    </div>
+                    <div class="span6">
+                        <button href="javascript:;" class="btn btn-circle green-meadow btnPad"><i class="fa fa-phone"></i></button>
+                    </div>
+                    <div class="span6">
+                        <button href="javascript:;" class="btn btn-circle red-mint btnPad"><i class="fa fa-phone"></i></button>
+                    </div>
+                    <BR>
+                    <div class="col-md-12">
+                        <a href="javascript:;" class="btn green btn-block">pausa/unpausa</a>
+                        <BR>
+                        <a href="javascript:;" class="btn purple btn-block">login/logoff</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="col-lg-12 col-md-12 col-sm-12 divContainer">
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="page-bar">
+            <ul class="page-breadcrumb">
+                <li>
+                    <a href="index.html">Home</a>
+                    <i class="fa fa-circle"></i>
+                </li>
+                <li>
+                    <span>Dashboard</span>
+                </li>
+            </ul>
+            <div class="page-toolbar">
+                <div id="" class="pull-right  btn btn-sm" data-container="body" data-placement="bottom" data-original-title="Change dashboard date range">
+                    <i class="icon-calendar"></i>&nbsp;
+                    <span class="thin uppercase hidden-xs">
+                        <em>
+                            <script type="text/javascript">
+                                var d=new Date()
+                                var weekday=new Array("Domingo","Segunda","Ter&ccedil;a","Quarta","Quinta","Sexta","S&aacute;bado")
+                                var monthname=new Array("Janeiro","Fevereiro","Mar&ccedil;o","Abril","Mar&ccedil;o","Junho","Julho","Agosto","Setembro","Outubro","Novembro","Dezembro")
+                                document.write(weekday[d.getDay()] + ", ")
+                                document.write(d.getDate() + " de ")
+                                document.write(monthname[d.getMonth()] + " de ")
+                                document.write(d.getFullYear())
+                            </script>
+                        </em>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<BR>
+<div class="row">
+
+
+
+<div class="col-lg-6 col-xs-12 col-sm-12">
+    <!-- BEGIN PORTLET-->
+    <div class="portlet light bordered">
+        <div class="portlet-title">
+            <div class="caption">
+                <i class="icon-bubble font-hide hide"></i>
+                <span class="caption-subject font-hide bold uppercase">JSON</span>
+            </div>
+        </div>
+        <div class="portlet-body" id="chats">
+
+          <a href="notification" class="btn blue easy-pie-chart-reload">
+              <i class="fa fa-chat"></i> CHAMA PUSH </a>
+              <a href="recorder" id="" class="btn red easy-pie-chart-reload">
+                  <i class="fa fa-video"></i> GRAVAR TELA </a>
+
+                  <a href="http://localhost:3000/test1.mp4" id="theBtnVer" target="_blank" class="btn green easy-pie-chart-reload">
+                      <i class="fa fa-video"></i> VER GRAVAÇÃO (aguarde 10s)</a>
+                  <BR><BR>
+            <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 525px;"><div class="scroller" style="height: 525px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible1="1" data-initialized="1">
+                    <ul class="chats">
+                        <li class="in">
+                            <div class="message">
+                                <a href="javascript:;" class="name">  </a>
+                                <span class="datetime"> at 20:30 </span>
+                                <span class="body">  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div><div class="slimScrollBar" style="background: rgb(187, 187, 187); width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-radius: 7px; z-index: 99; right: 1px; height: 376.023px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(234, 234, 234); opacity: 0.2; z-index: 90; right: 1px;"></div></div>
+            <div class="chat-form">
+                <div class="input-cont">
+                    <input class="form-control" type="text" placeholder="Type a message here..."> </div>
+                <div class="btn-cont">
+                    <span class="arrow"> </span>
+                    <a href="" class="btn blue icn-only">
+                        <i class="fa fa-check icon-white"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END PORTLET-->
+</div>
+<div class="col-lg-6 col-xs-12 col-sm-12">
+<div class="row">
+<div class="col-lg-12col-xs-12 col-sm-12">
+    <div class="portlet light bordered">
+        <div class="portlet-title">
+            <div class="caption">
+                <i class="icon-cursor font-dark hide"></i>
+                <span class="caption-subject font-dark bold uppercase">General Stats</span>
+            </div>
+            <div class="actions">
+                <a href="javascript:;" class="btn btn-sm btn-circle red easy-pie-chart-reload">
+                    <i class="fa fa-repeat"></i> Reload </a>
+            </div>
+        </div>
+        <div class="portlet-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="easy-pie-chart">
+                        <div class="number transactions" data-percent="55">
+                            <span>+55</span>% <canvas height="75" width="75"></canvas></div>
+                        <a class="title" href="javascript:;"> Agentes Disponíveis
+
+                        </a>
+                    </div>
+                </div>
+                <div class="margin-bottom-10 visible-sm"> </div>
+                <div class="col-md-4">
+                    <div class="easy-pie-chart">
+                        <div class="number visits" data-percent="85">
+                            <span>+85</span>% <canvas height="75" width="75"></canvas></div>
+                        <a class="title" href="javascript:;"> Em Pausa
+
+                        </a>
+                    </div>
+                </div>
+                <div class="margin-bottom-10 visible-sm"> </div>
+                <div class="col-md-4">
+                    <div class="easy-pie-chart">
+                        <div class="number bounce" data-percent="46">
+                            <span>-46</span>% <canvas height="75" width="75"></canvas></div>
+                        <a class="title" href="javascript:;"> Ligações em Fila
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-12 col-xs-12 col-sm-12">
+<!-- BEGIN PORTLET-->
+<div class="portlet light bordered">
+<div class="portlet-title">
+    <div class="caption">
+        <i class="icon-bar-chart font-dark hide"></i>
+        <span class="caption-subject font-dark bold uppercase">Identificação de Usuário</span>
+        <!--                                                <span class="caption-helper">Detalhe da chamada no momento</span>-->
+    </div>
+</div>
+<div class="portlet-body form">
+<form class="form-horizontal" action="#" id="submit_form" method="POST" novalidate="novalidate">
+<div class="form-wizard">
+<div class="form-body">
+<ul class="nav nav-pills nav-justified steps">
+    <li class="active">
+        <a href="#tab1" data-toggle="tab" class="step" aria-expanded="true">
+            <span class="number"> 1 </span>
+                                                                <span class="desc">
+                                                                    <i class="fa fa-check"></i> Account Setup </span>
+        </a>
+    </li>
+    <li>
+        <a href="#tab2" data-toggle="tab" class="step">
+            <span class="number"> 2 </span>
+                                                                <span class="desc">
+                                                                    <i class="fa fa-check"></i> Profile Setup </span>
+        </a>
+    </li>
+    <li>
+        <a href="#tab3" data-toggle="tab" class="step active">
+            <span class="number"> 3 </span>
+                                                                <span class="desc">
+                                                                    <i class="fa fa-check"></i> Billing Setup </span>
+        </a>
+    </li>
+    <li>
+        <a href="#tab4" data-toggle="tab" class="step">
+            <span class="number"> 4 </span>
+                                                                <span class="desc">
+                                                                    <i class="fa fa-check"></i> Confirm </span>
+        </a>
+    </li>
+</ul>
+<div id="bar" class="progress progress-striped" role="progressbar">
+    <div class="progress-bar progress-bar-success" style="width: 25%;"> </div>
+</div>
+<div class="tab-content">
+    <div class="alert alert-danger display-none">
+        <button class="close" data-dismiss="alert"></button> You have some form errors. Please check below. </div>
+    <div class="alert alert-success display-none">
+        <button class="close" data-dismiss="alert"></button> Your form validation is successful! </div>
+    <div class="tab-pane active" id="tab1">
+        <h3 class="block">Provide your account details</h3>
+        <div class="form-group">
+            <label class="control-label col-md-3">Username
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="username">
+                <span class="help-block"> Provide your username </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Password
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="password" class="form-control" name="password" id="submit_form_password">
+                <span class="help-block"> Provide your password. </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Confirm Password
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="password" class="form-control" name="rpassword">
+                <span class="help-block"> Confirm your password </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Email
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="email">
+                <span class="help-block"> Provide your email address </span>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="tab2">
+        <h3 class="block">Provide your profile details</h3>
+        <div class="form-group">
+            <label class="control-label col-md-3">Fullname
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="fullname">
+                <span class="help-block"> Provide your fullname </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Phone Number
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="phone">
+                <span class="help-block"> Provide your phone number </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Gender
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <div class="radio-list">
+                    <label>
+                        <input type="radio" name="gender" value="M" data-title="Male"> Male </label>
+                    <label>
+                        <input type="radio" name="gender" value="F" data-title="Female"> Female </label>
+                </div>
+                <div id="form_gender_error"> </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Address
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="address">
+                <span class="help-block"> Provide your street address </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">City/Town
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="city">
+                <span class="help-block"> Provide your city or town </span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Country</label>
+            <div class="col-md-4">
+                <select name="country" id="country_list" class="form-control select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+                    <option value=""></option>
+                    <option value="AF">Afghanistan</option>
+                    <option value="AL">Albania</option>
+                    <option value="DZ">Algeria</option>
+                    <option value="AS">American Samoa</option>
+                    <option value="AD">Andorra</option>
+                    <option value="AO">Angola</option>
+                    <option value="AI">Anguilla</option>
+                    <option value="WF">Wallis and Futuna Islands</option>
+                    <option value="EH">Western Sahara</option>
+                    <option value="YE">Yemen</option>
+                    <option value="ZM">Zambia</option>
+                    <option value="ZW">Zimbabwe</option>
+                </select><span class="select2 select2-container select2-container--bootstrap" dir="ltr" style="width: auto;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-labelledby="select2-country_list-container"><span class="select2-selection__rendered" id="select2-country_list-container"><span class="select2-selection__placeholder">Select</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Remarks</label>
+            <div class="col-md-4">
+                <textarea class="form-control" rows="3" name="remarks"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="tab3">
+        <h3 class="block">Provide your billing and credit card details</h3>
+        <div class="form-group">
+            <label class="control-label col-md-3">Card Holder Name
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <input type="text" class="form-control" name="card_name">
+                <span class="help-block"> </span>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Payment Options
+                <span class="required" aria-required="true"> * </span>
+            </label>
+            <div class="col-md-4">
+                <div class="checkbox-list">
+                    <label>
+                        <input type="checkbox" name="payment[]" value="1" data-title="Auto-Pay with this Credit Card."> Auto-Pay with this Credit Card </label>
+                    <label>
+                        <input type="checkbox" name="payment[]" value="2" data-title="Email me monthly billing."> Email me monthly billing </label>
+                </div>
+                <div id="form_payment_error"> </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane" id="tab4">
+        <h3 class="block">Confirm your account</h3>
+        <h4 class="form-section">Account</h4>
+        <div class="form-group">
+            <label class="control-label col-md-3">Username:</label>
+            <div class="col-md-4">
+                <p class="form-control-static" data-display="username"> </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Email:</label>
+            <div class="col-md-4">
+                <p class="form-control-static" data-display="email"> </p>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-3">Expiration:</label>
+            <div class="col-md-4">
+                <p class="form-control-static" data-display="card_expiry_date"> </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-3">Payment Options:</label>
+            <div class="col-md-4">
+                <p class="form-control-static" data-display="payment[]"> </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="form-actions">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-9">
+            <a href="javascript:;" class="btn default button-previous disabled" style="display: none;">
+                <i class="fa fa-angle-left"></i> Back </a>
+            <a href="javascript:;" class="btn btn-outline green button-next"> Continue
+                <i class="fa fa-angle-right"></i>
+            </a>
+            <a href="javascript:;" class="btn green button-submit" style="display: none;"> Submit
+                <i class="fa fa-check"></i>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- END PORTLET-->
+</div>
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+<!-- END CONTENT -->
+<!-- BEGIN QUICK SIDEBAR -->
+<a href="javascript:;" class="page-quick-sidebar-toggler">
+    <i class="icon-login"></i>
+</a>
+</div>
+
+
+<div class="page-footer">
+    <div class="page-footer-inner"> 2018 &copy;
+        <a target="_blank" href="javascript:;">SVX Team</a> Powered By Stefanini
+    </div>
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+</div>
+<!-- END FOOTER -->
+</div>
+<!-- BEGIN QUICK NAV -->
+</div>
+</div>
+</div>
+<div class="quick-nav-overlay"></div>
+
+<!-- BEGIN CORE PLUGINS -->
+<script src="./assets/global/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script src="./assets/global/plugins/moment.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/morris/morris.min.js" type="text/javascript"></script>
+
+<script src="./assets/global/plugins/morris/raphael-min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/flot/jquery.flot.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/flot/jquery.flot.resize.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/flot/jquery.flot.categories.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/jquery-easypiechart/jquery.easypiechart.min.js" type="text/javascript"></script>
+<script src="./assets/global/plugins/jquery.sparkline.min.js" type="text/javascript"></script>
+
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN THEME GLOBAL SCRIPTS -->
+<script src="./assets/global/scripts/app.min.js" type="text/javascript"></script>
+<!-- END THEME GLOBAL SCRIPTS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="./assets/global/scripts/dashboard.min.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!-- BEGIN THEME LAYOUT SCRIPTS -->
+<script src="./assets/layouts/layout/scripts/layout.min.js" type="text/javascript"></script>
+<script src="./assets/layouts/global/scripts/quick-sidebar.min.js" type="text/javascript"></script>
+<script src="./assets/layouts/global/scripts/quick-nav.min.js" type="text/javascript"></script>
+<!-- END THEME LAYOUT SCRIPTS -->
+<script>
+
+    $(window).load(function() {
+// Animate loader off screen
+        $(".se-pre-con").fadeOut("slow");;
+    });
+
+    $(document).ready(function()
+    {
+
+          $('#theBtnVer').attr('disabled','disabled');
+          setTimeout(function() {
+              $('#theBtnVer').attr('disabled','');
+          },10000);   // enable after 2 seconds
+
+
+
+        $('.btn-phone').click(function () {
+            $('.divPhone').fadeIn();
+            $('.divPhone').addClass('col-lg-3 col-md-4 col-sm-4'); //1024<
+            $('.divContainer').addClass('col-lg-9 col-md-8 col-sm-8').removeClass('col-lg-12 col-md-12 col-sm-12'); //1024>
+        });
+
+        $('.num').click(function () {
+            var num = $(this);
+            var text = $.trim(num.find('.txt').clone().children().remove().end().text());
+            var telNumber = $('#telNumber');
+            $(telNumber).val(telNumber.val() + text);
+        });
+
+        $('#clickmewow').click(function()
+        {
+            $('#radio1003').attr('checked', 'checked');
+        });
+        $('.link_menu').click(function() {
+            $('.link_menu').css('text-decoration', 'none');
+            $('.link_menu').css('font-weight', 'normal');
+            $(this).css('font-weight', 'bold');
+            $(this).css('text-decoration', 'underline');
+        });
+
+        $('.btn-logoff').click(function(){
+            $(this).attr('disabled',true);
+            $(this).text('Aguarde...');
+        });
+
+        //Inibir botão de pausa para não enviar varias requisições
+        $('#myForm').on('submit', function(e){
+            e.preventDefault();
+            var len = $('#selectPausa').val();
+            if (len != '') {
+                $('.btn-pausado').text('Aguarde...');
+                $('.btn-pausado').attr('disabled',true);
+                this.submit();
+            }
+        });
+
+        //Inibir botão despausa para não enviar varias requisições
+        $('.btn-despausado').click(function(){
+            $(this).text('Aguarde...');
+            $(this).attr('disabled',true);
+        });
+
+    });
+
+    // $.ajax({
+    //     url:'projeto_controller_ajax/verificaStatus',
+    //     method:"POST",
+    //     success:function (data, key) {
+    //         var mandrill_events = JSON.parse(data);
+    //         console.log(mandrill_events[0],mandrill_events[1]);
+    //         if (mandrill_events[0] == 0) {
+    //             $('.top-bar').css('background-color', 'green');
+    //             $('.top-bar').css('color', 'white');
+    //             $('.titulo-do-status').text('Agente Disponível');
+    //         }
+    //         if (mandrill_events[0] == 99) {
+    //             $('.top-bar').css('background-color', '#FFB74D');
+    //             $('.top-bar').css('color', 'white');
+    //             $('.titulo-do-status').text('Agente em Pausa (Entrando nas filas)');
+    //         }
+    //
+    //         if (mandrill_events[0] == 1) {
+    //             $('.top-bar').css('background-color', '#FFB74D');
+    //             $('.top-bar').css('color', 'white');
+    //             $('.titulo-do-status').text('Agente em Pausa (' + mandrill_events[1].nome +')');
+    //         }
+    //
+    //         if (mandrill_events[0] == 2) {
+    //             $('.top-bar').css('background-color', '#F44336');
+    //             $('.top-bar').css('color', 'white');
+    //             $('.titulo-do-status').text('Agente Ocupado (Em Atendimento)');
+    //         }
+    //
+    //         if (mandrill_events[0] == 98) {
+    //             $('.top-bar').css('background-color', '#F44336');
+    //             $('.top-bar').css('color', 'white');
+    //             $('.titulo-do-status').text('Agente Ocupado (Saindo das Filas)');
+    //         }
+    //     }
+    // });
+
+    // setInterval(function () {
+    //     $.ajax({
+    //         url:'projeto_controller_ajax/verificaStatus',
+    //         method:"POST",
+    //         success:function (data, key) {
+    //
+    //             var mandrill_events = JSON.parse(data);
+    //             console.log(mandrill_events[0],mandrill_events[1]);
+    //             if (mandrill_events[0] == 0) {
+    //                 $('.top-bar').css('background-color', 'green');
+    //                 $('.top-bar').css('color', 'white');
+    //                 $('.titulo-do-status').text('Agente Disponível');
+    //             }
+    //
+    //             if (mandrill_events[0] == 99) {
+    //                 $('.top-bar').css('background-color', '#FFB74D');
+    //                 $('.top-bar').css('color', 'white');
+    //                 $('.titulo-do-status').text('Agente em Pausa (Entrando nas filas)');
+    //             }
+    //
+    //             if (mandrill_events[0] == 1) {
+    //                 $('.top-bar').css('background-color', '#FFB74D');
+    //                 $('.top-bar').css('color', 'white');
+    //                 $('.titulo-do-status').text('Agente em Pausa (' + mandrill_events[1].nome +')');
+    //             }
+    //
+    //             if (mandrill_events[0] == 2) {
+    //                 $('.top-bar').css('background-color', '#F44336');
+    //                 $('.top-bar').css('color', 'white');
+    //                 $('.titulo-do-status').text('Agente Ocupado (Em Atendimento)');
+    //             }
+    //
+    //             if (mandrill_events[0] == 98) {
+    //                 $('.top-bar').css('background-color', '#F44336');
+    //                 $('.top-bar').css('color', 'white');
+    //                 $('.titulo-do-status').text('Agente Ocupado (Saindo das Filas)');
+    //             }
+    //
+    //             if (mandrill_events[0] == 9999) {
+    //                 $('.top-bar').css('background-color', '#F44336');
+    //                 $('.top-bar').css('color', 'white');
+    //                 $('.titulo-do-status').text('Agente Deslogado Remotamente');
+    //
+    //             }
+    //
+    //             if (mandrill_events[2] == 'askLogoff') {
+    //
+    //
+    //                 $('.top-bar').css('background-color', '#F44336');
+    //                 $('.top-bar').css('color', 'white');
+    //
+    //                 $('.titulo-do-status').html('3 horas em pausa. <a target="frame_container" style="color: #ffffff" href="projeto_controller_pausa/atualizar_last_activity">Clique Aqui</a> para continuar pausado.');
+    //
+    //             }
+    //         }
+    //     })
+    // }, 3000);
+</script>
+</body>
+</html>
+
+<!---->
+<div id="myModal" class="modal">
+    Modal content
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="col-md-6">
+
+            <div class="widget">
+                <div class="widget-header">
+                    <h3><i class="fa fa-edit"></i> Titulo</h3>
+                </div>
+                <div class="widget-content">
+                    Texto aqui
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

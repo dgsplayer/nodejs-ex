@@ -2,11 +2,19 @@
 var express = require('express'),
     app     = express(),
     morgan  = require('morgan');
-    
+
+var consign = require('consign');
 Object.assign=require('object-assign')
 
 app.engine('html', require('ejs').renderFile);
 app.use(morgan('combined'))
+
+//Mine
+app.set('view engine','ejs');
+app.set('views','./app/views');
+//app.use(express.static('./public'));
+consign().include('app/routes').into(app);
+
 
 var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
     ip   = process.env.IP   || process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0',

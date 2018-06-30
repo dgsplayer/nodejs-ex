@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+	<html lang="pt-br">
+		<head>
+			<meta charset="utf-8"/>
+			<title>Notícias</title>
+		</head>
+	<body>
+
+		<h1>Notícias</h1>
+		<table>
+			<tr>
+				<td>Empresa</td>
+				<td>Telefone</td>
+			</tr>
+			<% for(var i=0; i < noticias.length;i++){ %>
+				<tr>
+					<td><%= noticias[i].nome_da_empresa %></td>
+					<td><%= noticias[i].telefone %></td>
+				</tr>
+			<% } %>
+	</body>
+</html>
