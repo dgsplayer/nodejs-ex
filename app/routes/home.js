@@ -8,12 +8,12 @@ module.exports = function(app){
     //Record screen
     var fs = require('fs');
     // fs.statSync(filePath);
-    if (fs.statSync('./public/test1.mp4')) {
-      fs.unlink('./public/test1.mp4', (err) => {
-        if (err) throw err;
-        console.log('./public/test1.mp4 deletado');
-      });
-    }
+    //if (fs.statSync('./public/test1.mp4')) {
+    //  fs.unlink('./public/test1.mp4', (err) => {
+    //    if (err) throw err;
+    //    console.log('./public/test1.mp4 deletado');
+    //  });
+    //}
 
     var ScreenRecorder = require('screen-recorder').ScreenRecorder
     var path = require('path')
