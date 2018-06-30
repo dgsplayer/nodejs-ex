@@ -12,7 +12,7 @@ app.use(morgan('combined'))
 //Mine
 app.set('view engine','ejs');
 app.set('views','./app/views');
-//app.use(express.static('./public'));
+app.use(express.static('./public'));
 consign().include('app/routes').into(app);
 
 
