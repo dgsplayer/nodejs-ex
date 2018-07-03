@@ -38,7 +38,62 @@
     <link href="./assets/global/css/phone.css" rel="stylesheet" type="text/css">
 
     <script src="./assets/global/plugins/jquery.min.js" type="text/javascript"></script>
+    <script src="./assets/global/plugins/notify.js" type="text/javascript"></script>
+    <script>
 
+
+                        //   console.log(mandrill_events.Nome);
+
+                        function onShowNotification () {
+                            console.log('notification is shown!');
+                        }
+
+                        function onCloseNotification () {
+                            console.log('notification is closed!');
+                        }
+
+                        function onClickNotification () {
+                            console.log('notification was clicked!');
+                        }
+
+                        function onErrorNotification () {
+                            console.error('Error showing notification. You may need to request permission.');
+                        }
+
+                        function onPermissionGranted () {
+                            console.log('Permission has been granted by the user');
+                            doNotification();
+                        }
+
+                        function onPermissionDenied () {
+                            console.warn('Permission has been denied by the user');
+                        }
+
+                        function doNotification () {
+
+
+
+                            var myNotification = new Notify('NOVA LIGAÇÃO!', {
+                                body: 'Aqui mensagem',
+                                tag: 'My unique id',
+                                notifyShow: onShowNotification,
+                                notifyClose: onCloseNotification,
+                                notifyClick: onClickNotification,
+                                notifyError: onErrorNotification,
+                                timeout: 4
+                            });
+
+                            myNotification.show();
+
+                        }
+
+                        if (!Notify.needsPermission) {
+                            doNotification();
+                        } else if (Notify.isSupported()) {
+                            Notify.requestPermission(onPermissionGranted, onPermissionDenied);
+                        }
+                  
+    </script>
 </head>
 <style>
     /* Paste this css to your style sheet file or under head tag */
@@ -480,7 +535,7 @@
               <a href="recorder" id="" class="btn red easy-pie-chart-reload">
                   <i class="fa fa-video"></i> GRAVAR TELA </a>
 
-                  <a href="./test1.mp4" id="theBtner" target="_blank" class="btn green easy-pie-chart-reload" download>
+                  <a href="http://localhost:3000/test1.mp4" id="theBtnVer" target="_blank" class="btn green easy-pie-chart-reload">
                       <i class="fa fa-video"></i> VER GRAVAÇÃO (aguarde 10s)</a>
                   <BR><BR>
             <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 525px;"><div class="scroller" style="height: 525px; overflow: hidden; width: auto;" data-always-visible="1" data-rail-visible1="1" data-initialized="1">
